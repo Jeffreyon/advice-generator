@@ -1,3 +1,7 @@
+body {
+    font-family: "Manrope", sans-serif;
+}
+
 button:hover {
     box-shadow: 0 0 26px 13px #00ff531f;
 }
