@@ -1,3 +1,11 @@
-button {
-    background-color: blueviolet;
+button:hover {
+    box-shadow: 0 0 26px 13px #00ff531f;
+}
+
+#advice-card {
+    box-shadow: 0 8 5px 5px red;
+}
+
+#advice-id {
+    letter-spacing: 3px;
 }
