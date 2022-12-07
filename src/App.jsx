@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import "./styles/styles.css";
 
 function App() {
     let [advice, setAdvice] = useState("");
@@ -21,7 +22,10 @@ function App() {
 
     return (
         <>
-            <button ref={trigger} onClick={fetchAdvice}>
+            <button
+                className=" bg-red-500 rounded"
+                ref={trigger}
+                onClick={fetchAdvice}>
                 Get advice
             </button>
             <pre>{advice}</pre>
