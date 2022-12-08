@@ -9,3 +9,9 @@ In production, prune your tailwind files using a postcss script
 If you're using `animate.css`, the animateCSS module in `lib/` is a good function for smooth transistions
 
 The api caches requests for 2s, so i added this flashy animation to give a sense of waiting
+
+# Deploying to github pages
+
+-   create deploy and predeploy scripts in package.json
+-   add `homepage: '.'` in package.json
+-   add `base = '/your-repo-name/'`. (if you are deploying to your root github domain instead, use `base = '/'`)

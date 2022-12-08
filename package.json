@@ -10,6 +10,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist/"
     },
+    "homepage": ".",
     "dependencies": {
         "animate.css": "^4.1.1",
         "autoprefixer": "^10.4.13",
