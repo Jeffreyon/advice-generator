@@ -74,11 +74,23 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className=" absolute bottom-4 w-full text-center p-2">
+            <div className=" absolute bottom-4 w-full text-center p-2 text-slate-700">
                 <a
                     href="https://twitter.com/jeffreyon_"
-                    className=" text-slate-700 hover:text-emerald-300 transition-colors delay-75">
+                    className="  hover:text-emerald-300 transition-colors delay-75">
                     Made by Jeffrey Onuigbo
+                </a>
+                <span className="mx-4">/</span>
+                <a
+                    href="https://github.com/Jeffreyon/advice-generator"
+                    className=" hover:text-emerald-300 transition-colors delay-75">
+                    View code
+                </a>
+                <span className="mx-4">/</span>
+                <a
+                    href="link to hashnode article"
+                    className=" hover:text-emerald-300 transition-colors delay-75">
+                    How I built this (Process)
                 </a>
             </div>
         </>
