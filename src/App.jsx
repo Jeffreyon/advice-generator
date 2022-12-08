@@ -32,45 +32,56 @@ function App() {
     }
 
     return (
-        <div className=" flex items-center justify-center h-screen bg-slate-900 p-5">
-            <div id="advice-card" className="bg-slate-700 rounded-xl max-w-md">
-                <div className=" px-5 py-8 sm:p-8">
-                    <p
-                        id="advice-id"
-                        className=" uppercase text-xs font-bold tracking-widest text-center text-emerald-300">
-                        Advice #{advice.id}
-                    </p>
-                    <h2
-                        id="advice-text"
-                        className=" text-2xl font-semibold text-slate-200 text-center mt-5 mb-8">
-                        {advice.advice ? `"${advice.advice}"` : ""}
-                    </h2>
-                    <img
-                        className=" mx-auto hidden sm:block"
-                        src={divider_desktop}
-                        alt=""
-                    />
-                    <img
-                        className=" mx-auto sm:hidden"
-                        src={divider_mobile}
-                        alt=""
-                    />
-                </div>
-                <div className=" -mb-7">
-                    <button
-                        className=" bg-emerald-300 rounded-full flex items-center justify-center w-14 h-14 mx-auto disabled:shadow-none disabled:bg-orange-300 disabled:cursor-progress transition-colors"
-                        ref={trigger}
-                        onClick={fetchAdvice}>
+        <>
+            <div className=" flex items-center justify-center h-screen bg-slate-900 p-5">
+                <div
+                    id="advice-card"
+                    className="bg-slate-700 rounded-xl max-w-md">
+                    <div className=" px-5 py-8 sm:p-8">
+                        <p
+                            id="advice-id"
+                            className=" uppercase text-xs font-bold tracking-widest text-center text-emerald-300">
+                            Advice #{advice.id}
+                        </p>
+                        <h2
+                            id="advice-text"
+                            className=" text-2xl font-semibold text-slate-200 text-center mt-5 mb-8">
+                            {advice.advice ? `"${advice.advice}"` : ""}
+                        </h2>
                         <img
-                            src={dice}
-                            alt="Get random Advice"
-                            title="Get random Advice"
-                            className=" w-5"
+                            className=" mx-auto hidden sm:block"
+                            src={divider_desktop}
+                            alt=""
                         />
-                    </button>
+                        <img
+                            className=" mx-auto sm:hidden"
+                            src={divider_mobile}
+                            alt=""
+                        />
+                    </div>
+                    <div className=" -mb-7">
+                        <button
+                            className=" bg-emerald-300 rounded-full flex items-center justify-center w-14 h-14 mx-auto disabled:shadow-none disabled:bg-orange-300 disabled:cursor-progress transition-colors"
+                            ref={trigger}
+                            onClick={fetchAdvice}>
+                            <img
+                                src={dice}
+                                alt="Get random Advice"
+                                title="Get random Advice"
+                                className=" w-5"
+                            />
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div className=" absolute bottom-4 w-full text-center p-2">
+                <a
+                    href="https://twitter.com/jeffreyon_"
+                    className=" text-slate-700 hover:text-emerald-300 transition-colors delay-75">
+                    Made by Jeffrey Onuigbo
+                </a>
+            </div>
+        </>
     );
 }
 
