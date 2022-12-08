@@ -88,7 +88,7 @@ function App() {
                 </a>
                 <span className="mx-4">/</span>
                 <a
-                    href="link to hashnode article"
+                    href="https://jeffreyon.hashnode.dev/i-built-an-advice-generator-using-react-and-tailwindcss-heres-how-i-built-this"
                     className=" hover:text-emerald-300 transition-colors delay-75">
                     How I built this (Process)
                 </a>
