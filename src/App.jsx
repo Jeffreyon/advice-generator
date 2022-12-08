@@ -17,14 +17,15 @@ function App() {
 
     async function fetchAdvice() {
         trigger.current.disabled = true;
-
         animateCSS("#advice-text", "flash");
 
         await fetch(`https://api.adviceslip.com/advice`)
             .then((response) => response.json())
             .then(({ slip }) => {
                 setAdvice(slip);
-                trigger.current.disabled = false;
+                setTimeout(() => {
+                    trigger.current.disabled = false;
+                }, 2000);
             })
             .catch(console.log);
         //
